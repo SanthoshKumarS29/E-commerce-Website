@@ -6,6 +6,7 @@ import { CiBoxList } from "react-icons/ci";
 import { FiShoppingBag } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import ShopCart from '../pages/ShopCart';
+import menuImg from '/images/menu-banner.jpg'
 
 function NavBar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -150,7 +151,7 @@ function NavBar() {
                                     </div>
                                 </div>
                                 <div className=''>
-                                    <img src="src/assets/images/menu-banner.jpg" alt="Nothing" />
+                                    <img src={menuImg} alt="Nothing" />
                                     <div className='absolute top-2 w-40 p-6'>
                                         <p className='font-bold text-base'>Dont miss this Offer Today</p>
                                         <button className='border-2 p-2 mt-3 text-sm font-bold text-white rounded-lg bg-[#0aad0a]'>Shop Now</button>
@@ -303,7 +304,7 @@ function NavBar() {
                                                     </div>
                                                 </div>
                                                 <div className='relative'>
-                                                    <img src="src/assets/images/menu-banner.jpg" alt="Nothing" />
+                                                    <img src={menuImg} alt="Nothing" />
                                                     <div className='absolute top-2 w-40 p-6'>
                                                         <p className='font-bold text-base'>Dont miss this Offer Today</p>
                                                         <button className='border-2 p-2 mt-3 text-sm font-bold text-white rounded-lg bg-[#0aad0a]'>Shop Now</button>

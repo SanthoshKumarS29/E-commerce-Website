@@ -7,6 +7,9 @@ import { IoReloadOutline } from "react-icons/io5";
 import { CartContext } from '../hooks/Context';
 import banner1 from '/images/grocery-banner.png'
 import banner2 from '/images/grocery-banner-2.jpg'
+import banner3 from '/images/banner-deal.jpg'
+import banner4 from '/images/assortment-citrus-fruits.png'
+
 
 const Home = () => {
   const { addToCart } = useContext(CartContext)
@@ -160,7 +163,7 @@ const Home = () => {
         </div>
         <div className="w-full flex overflow-x-auto xl:overflow-visible gap-5 py-6">
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="src/assets/images/banner-deal.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src={banner3} alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 text-white px-4 py-8">
               <h1 className="text-lg md:text-2xl font-bold mb-2">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
@@ -169,16 +172,16 @@ const Home = () => {
           </div>
   
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="src/assets/images/assortment-citrus-fruits.png" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src={banner4} alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 px-4 py-8 text-black">
               <h1 className="text-lg md:text-2xl font-bold mb-2 ">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
-              <button className="bg-[#0aad0a] px-3 py-2 flex items-center gap-1 rounded-lg text-sm font-medium hover:bg-[#42a442]">Shop Now <FaArrowRight size={15} /></button>
+              <button className="bg-[#0aad0a] px-3 py-2 flex items-center gap-1 rounded-lg text-white text-sm font-medium hover:bg-[#42a442]">Shop Now <FaArrowRight size={15} /></button>
             </div>
           </div>
   
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="src/assets/images/banner-deal.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src={banner3} alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 text-white px-4 py-8">
               <h1 className="text-lg md:text-2xl font-bold mb-2">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
@@ -187,11 +190,11 @@ const Home = () => {
           </div>
           
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="src/assets/images/assortment-citrus-fruits.png" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src={banner4} alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 text-black px-4 py-8">
               <h1 className="text-lg md:text-2xl font-bold mb-2">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
-              <button className="bg-[#0aad0a] px-3 py-2 flex items-center gap-1 rounded-lg text-sm font-medium hover:bg-[#42a442]">Shop Now <FaArrowRight size={15} /></button>
+              <button className="bg-[#0aad0a] px-3 py-2 flex items-center gap-1 rounded-lg text-white text-sm font-medium hover:bg-[#42a442]">Shop Now <FaArrowRight size={15} /></button>
             </div>
           </div>
         </div>
