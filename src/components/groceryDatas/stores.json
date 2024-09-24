@@ -1,0 +1,103 @@
+{
+    "list":[
+        {
+            "stimg":"/store-logo/stores-logo-1.svg",
+            "st-title":"E-Grocery Super Market",
+            "st-des1":"Organic",
+            "st-des2":"Groceries",
+            "st-des3":"Butcher Shop",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"7.5mi away",
+            "st-price":"In-store Prices"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-2.svg",
+            "st-title":"DealSHare Mart",
+            "st-des1":"Alcohol",
+            "st-des2":"Groceries",
+            "st-des3":"",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"7.5mi away",
+            "st-price":"In-store Prices"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-3.svg",
+            "st-title":"D-Mart",
+            "st-des1":"Groceries",
+            "st-des2":"Bakery Deli",
+            "st-des3":"",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"9.3mi away",
+            "st-price":"In-store Prices"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-4.svg",
+            "st-title":"Blinkit STore",
+            "st-des1":"Meal Kits",
+            "st-des2":"Prepared Meals",
+            "st-des3":"Organic",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"40.5mi away",
+            "st-price":"MRP Price"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-5.svg",
+            "st-title":"SToreFront Super Market",
+            "st-des1":"Groceries",
+            "st-des2":"Bakery",
+            "st-des3":"",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"28.1mi away",
+            "st-price":"MRP Price"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-6.svg",
+            "st-title":"Big Basket",
+            "st-des1":"Groceries",
+            "st-des2":"Deli",
+            "st-des3":"",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"7.5mi away",
+            "st-price":"MRP Price"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-7.svg",
+            "st-title":"Swiggy Instamart",
+            "st-des1":"Meal Kits",
+            "st-des2":"Prepared Meals",
+            "st-des3":"Organic",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"40.5mi away",
+            "st-price":"In-store Prices"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-8.svg",
+            "st-title":"Online Grocery Market",
+            "st-des1":"Groceries",
+            "st-des2":"Deli",
+            "st-des3":"",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"7.5mi away",
+            "st-price":"In-store Prices"
+        },
+        {
+            "stimg":"/store-logo/stores-logo-9.svg",
+            "st-title":"SPensors",
+            "st-des1":"Groceries",
+            "st-des2":"Deli",
+            "st-des3":"",
+            "st-delivery":"Delivery",
+            "st-available":"Pickup available",
+            "st-distance":"7.5mi away",
+            "st-price":"MRP Price"
+        }
+    ]
+}

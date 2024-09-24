@@ -1,0 +1,11 @@
+body{
+    font-family: sans-serif;
+}
+/* In your global CSS or Tailwind config */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+.scrollbar-hide {
+    scrollbar-width: none; /* For Firefox */
+}
+  
