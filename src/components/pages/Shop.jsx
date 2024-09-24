@@ -4,6 +4,7 @@ import { IoStar } from "react-icons/io5";
 import { IoMdStarOutline } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import slidesData from '../groceryDatas/datas.json';
+import sideImg from '/images/assortment-citrus-fruits.png'
 
 const Shop = () => {
   const [open, setClose] = useState(null)
@@ -228,7 +229,7 @@ const Shop = () => {
 
             <div className='mt-5'>
               <div className='relative w-full'>
-                <img src="src/assets//images/assortment-citrus-fruits.png" alt="Nothing" className='object-cover rounded-lg' />
+                <img src={sideImg} alt="Nothing" className='object-cover rounded-lg' />
                 <div className='absolute top-2 px-5 py-5 space-y-3 w-full'>
                   <h3 className='text-3xl font-medium text-[#001e2b]'>Fresh Fruits</h3>
                   <p className='text-base mb-2'>Get Upto 25% Off</p>
@@ -440,7 +441,7 @@ const Shop = () => {
 
             <div className='mt-5'>
               <div className='relative w-full'>
-                <img src="src/assets/images/assortment-citrus-fruits.png" alt="Nothing" className='object-cover rounded-lg' />
+                <img src={sideImg} alt="Nothing" className='object-cover rounded-lg' />
                 <div className='absolute top-2 px-5 py-5 space-y-3 w-full'>
                   <h3 className='text-3xl font-medium text-[#001e2b]'>Fresh Fruits</h3>
                   <p className='text-base mb-2'>Get Upto 25% Off</p>

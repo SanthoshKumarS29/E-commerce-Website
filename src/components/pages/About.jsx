@@ -1,5 +1,9 @@
 import React from 'react';
 import officers from '../groceryDatas/leaders.json';
+import manImg from '/about/about-img.jpg'
+import svg1 from '/about/about-icons-1.svg'
+import svg2 from '/about/about-icons-2.svg'
+import svg3 from '/about/about-icons-3.svg'
 
 const About = () => {
 
@@ -15,7 +19,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <img src="src/assets/about/about-img.jpg" alt="About" className='rounded-lg' />
+            <img src={manImg} alt="About" className='rounded-lg' />
           </div>
         </div>
 
@@ -23,7 +27,7 @@ const About = () => {
           <h1 className='text-3xl font-bold my-4'>Ready to get started?</h1>
           <div className='flex flex-col lg:flex-row gap-10 items-center'>
             <div className="bg-[#f0f3f2] p-10 space-y-5 w-full lg:w-[500px]">
-              <img src="src/assets/about/about-icons-1.svg" alt="Grow my business" />
+              <img src={svg1} alt="Grow my business" />
               <h1 className='text-xl font-bold'>Grow my business with Fresh Cart</h1>
               <p className='text-base font-normal'>
                 Duis placerat, urna ut dictum lobortis, erat libero feugiat nulla, ullamcorper fermentum lectus dolor ut tortor.
@@ -34,7 +38,7 @@ const About = () => {
             </div>
 
             <div className="bg-[#f0f3f2] p-10 space-y-5 w-full lg:w-[500px]">
-              <img src="src/assets/about/about-icons-2.svg" alt="Advertise" />
+              <img src={svg2} alt="Advertise" />
               <h1 className='text-xl font-bold'>Advertise my brand on Freshcart</h1>
               <p className='text-base font-normal'>
                 Duis placerat, urna ut dictum lobortis, erat libero feugiat nulla, ullamcorper fermentum lectus dolor ut tortor.
@@ -45,7 +49,7 @@ const About = () => {
             </div>
 
             <div className="bg-[#f0f3f2] p-10 space-y-5 w-full lg:w-[500px]">
-              <img src="src/assets/about/about-icons-3.svg" alt="Learn More" />
+              <img src={svg3} alt="Learn More" />
               <h1 className='text-xl font-bold'>Learn more about Freshcart</h1>
               <p className='text-base font-normal'>
                 Vivamus non risus id sapien egestas tempus id sed lla mus justo metus, suscipit non hendrerit.

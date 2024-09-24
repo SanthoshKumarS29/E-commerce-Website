@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
+import regImg from '/reg-page/signup-g.svg'
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -67,7 +68,7 @@ const Register = () => {
       <div className='max-w-7xl mx-auto p-4 lg:p-0'>
         <div className='flex justify-center p-5 md:p-10 gap-52'>
           <div className='hidden lg:block'>
-            <img src="src/assets//reg-page/signup-g.svg" alt="Imgs" />
+            <img src={regImg} alt="Imgs" />
           </div>
           <div>
             <div className='pb-10'>

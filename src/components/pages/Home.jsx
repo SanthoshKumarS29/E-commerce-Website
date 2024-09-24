@@ -5,6 +5,8 @@ import { CiClock2,CiGift } from "react-icons/ci";
 import { BsBoxSeam } from "react-icons/bs";
 import { IoReloadOutline } from "react-icons/io5";
 import { CartContext } from '../hooks/Context';
+import banner1 from '/images/grocery-banner.png'
+import banner2 from '/images/grocery-banner-2.jpg'
 
 const Home = () => {
   const { addToCart } = useContext(CartContext)
@@ -107,7 +109,7 @@ const Home = () => {
         <div className='flex flex-col md:flex-row gap-4'>
           {/* First Banner */}
           <div className='relative flex-1'>
-            <img src="src/assets/images/grocery-banner.png" alt="Fruits & Vegetables" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
+            <img src={banner1} alt="Fruits & Vegetables" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
             <div className='absolute top-5 md:top-2 left-0 p-5 md:p-10 text-[#001e2b]'>
               <h1 className='text-2xl md:text-2xl lg:text-4xl font-bold mb-2'>Fruits & Vegetables</h1>
               <p className='md:text-lg mb-4'>Get Up to 30% Off</p>
@@ -119,7 +121,7 @@ const Home = () => {
 
           {/* Second Banner */}
           <div className='relative flex-1'>
-            <img src="src/assets/images/grocery-banner-2.jpg" alt="Freshly Baked Buns" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
+            <img src={banner2} alt="Freshly Baked Buns" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
             <div className='absolute top-5 md:top-2 left-0 p-5 md:p-10 text-[#001e2b]'>
               <h1 className='text-2xl md:text-2xl lg:text-4xl  font-bold mb-2'>Freshly Baked Buns</h1>
               <p className='md:text-lg mb-4'>Get Up to 25% Off</p>
@@ -136,11 +138,11 @@ const Home = () => {
         <h1 className='text-3xl font-bold mb-5'>Popular Products</h1>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
           {slidesData['pop-prdts'].slice(0,10).map((poprds) => (
-            <div key={poprds.id} className='border-2 p-2 md:p-4 hover:border-[#0aad0a] hover:shadow-lg duration-200'>
+            <div key={poprds.id} className='space-y-2 border-2 p-2 md:p-4 hover:border-[#0aad0a] hover:shadow-lg duration-200'>
               <FaRegHeart />
               <img src={poprds['pop-img']} alt={poprds['pop-name']} className='object-cover mb-2' />
               <p className='text-sm text-gray-500'>{poprds['pop-title']}</p>
-              <h3 className='font-semibold text-[13px] md:text-xl'>{poprds['pop-name']}</h3>
+              <h3 className='font-semibold text-[13px] md:text-base'>{poprds['pop-name']}</h3>
               <div className='flex justify-between items-center'>
                 <p className='text-lg font-bold'>{poprds['pop-value2']} <span className='line-through text-gray-500'>{poprds['pop-value1']}</span></p>
                 <button className='bg-[#0aad0a] text-white px-3 py-1 rounded-md mt-2' onClick={()=> addToCart(poprds)}

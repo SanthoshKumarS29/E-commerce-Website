@@ -3,6 +3,10 @@ import SideBar from '../SideBar'
 import { BiCheckDouble } from "react-icons/bi";
 import { RxHamburgerMenu,RxCross1 } from "react-icons/rx";
 import { CiBellOn,CiClock2 } from "react-icons/ci";
+import avatar1 from '/dashboard/avatar-1.jpg'
+import avatar2 from '/dashboard/avatar-2.jpg'
+import avatar3 from '/dashboard/avatar-5.jpg'
+
 
 const TopNabar = () => {
     const [open,setClose] = useState(false)
@@ -46,7 +50,7 @@ const TopNabar = () => {
               </div>
               <div className='flex gap-4 px-3 py-6 bg-gray-200 cursor-pointer'>
                 <div>
-                  <img src="src/assets/dashboard/avatar-1.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
+                  <img src={avatar1} alt="" className='h-12 w-12 rounded-full object-cover'/>
                 </div>
                 <div className='space-y-1 text-sm'>
                   <p className='font-bold'>Your Order is placed <span className='font-normal'>Waiting for Shipping</span></p>
@@ -55,7 +59,7 @@ const TopNabar = () => {
               </div>
               <div className='flex gap-4 px-3 py-6 hover:bg-gray-200 cursor-pointer'>
                 <div>
-                  <img src="src/assets/dashboard/avatar-5.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
+                  <img src={avatar3} alt="" className='h-12 w-12 rounded-full object-cover'/>
                 </div>
                 <div className='space-y-1 text-sm'>
                   <p className='font-bold'>Santhosh SK <span className='font-normal'>answered to your ordered pending list</span></p>
@@ -64,7 +68,7 @@ const TopNabar = () => {
               </div>
               <div className='flex gap-4 px-3 py-6 hover:bg-gray-200 cursor-pointer'>
                 <div>
-                  <img src="src/assets/dashboard/avatar-2.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
+                  <img src={avatar2} alt="" className='h-12 w-12 rounded-full object-cover'/>
                 </div>
                 <div className='space-y-1 text-sm'>
                   <p className='font-bold'>You have new Messages <span className='font-normal'>2 unread message</span></p>
@@ -77,7 +81,7 @@ const TopNabar = () => {
             )}
           </div>
           <div>
-            <img src="src/assets/dashboard/avatar-5.jpg" alt="" className='lg:h-12 h-10 lg:w-12 w-10 rounded-full object-cover'/>
+            <img src={avatar3} alt="" className='lg:h-12 h-10 lg:w-12 w-10 rounded-full object-cover'/>
           </div>
           <div className='block lg:hidden' onClick={handleNav}>
               {!nav ? <RxHamburgerMenu size={20}/>: <RxCross1 size={20}/>}
