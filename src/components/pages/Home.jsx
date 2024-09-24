@@ -107,7 +107,7 @@ const Home = () => {
         <div className='flex flex-col md:flex-row gap-4'>
           {/* First Banner */}
           <div className='relative flex-1'>
-            <img src="/images/grocery-banner.png" alt="Fruits & Vegetables" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
+            <img src="src/assets/images/grocery-banner.png" alt="Fruits & Vegetables" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
             <div className='absolute top-5 md:top-2 left-0 p-5 md:p-10 text-[#001e2b]'>
               <h1 className='text-2xl md:text-2xl lg:text-4xl font-bold mb-2'>Fruits & Vegetables</h1>
               <p className='md:text-lg mb-4'>Get Up to 30% Off</p>
@@ -119,7 +119,7 @@ const Home = () => {
 
           {/* Second Banner */}
           <div className='relative flex-1'>
-            <img src="/images/grocery-banner-2.jpg" alt="Freshly Baked Buns" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
+            <img src="src/assets/images/grocery-banner-2.jpg" alt="Freshly Baked Buns" className='w-full h-[220px] md:h-[200px] lg:h-auto rounded-md object-cover' />
             <div className='absolute top-5 md:top-2 left-0 p-5 md:p-10 text-[#001e2b]'>
               <h1 className='text-2xl md:text-2xl lg:text-4xl  font-bold mb-2'>Freshly Baked Buns</h1>
               <p className='md:text-lg mb-4'>Get Up to 25% Off</p>
@@ -158,7 +158,7 @@ const Home = () => {
         </div>
         <div className="w-full flex overflow-x-auto xl:overflow-visible gap-5 py-6">
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="/images/banner-deal.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src="src/assets/images/banner-deal.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 text-white px-4 py-8">
               <h1 className="text-lg md:text-2xl font-bold mb-2">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
@@ -167,7 +167,7 @@ const Home = () => {
           </div>
   
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="/images/assortment-citrus-fruits.png" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src="src/assets/images/assortment-citrus-fruits.png" alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 px-4 py-8 text-black">
               <h1 className="text-lg md:text-2xl font-bold mb-2 ">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
@@ -176,7 +176,7 @@ const Home = () => {
           </div>
   
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="/images/banner-deal.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src="src/assets/images/banner-deal.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 text-white px-4 py-8">
               <h1 className="text-lg md:text-2xl font-bold mb-2">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>
@@ -185,7 +185,7 @@ const Home = () => {
           </div>
           
           <div className="relative flex-shrink-0 w-[250px] md:w-[300px] lg:w-[300px] h-[400px]">
-            <img src="/images/assortment-citrus-fruits.png" alt="" className="w-full h-full object-cover rounded-lg" />
+            <img src="src/assets/images/assortment-citrus-fruits.png" alt="" className="w-full h-full object-cover rounded-lg" />
             <div className="absolute top-0 text-black px-4 py-8">
               <h1 className="text-lg md:text-2xl font-bold mb-2">100% Organic Coffee Beans</h1>
               <p className="text-sm md:text-base font-medium mb-5">Get The best deals before close</p>

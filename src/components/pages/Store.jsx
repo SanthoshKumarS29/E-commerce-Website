@@ -15,7 +15,7 @@ const Store = () => {
             <div>
                 <div className='flex items-center justify-between py-8 bg-[#f0f3f2] rounded-2xl my-6'>
                     <p className='sm:text-xl md:text-2xl lg:text-4xl font-medium pl-6'>Stores</p>
-                    <img src="/store-logo/store-graphics.svg" alt="" className='w-[200px] md:w-[350px] lg:w-[450px]'/>
+                    <img src="src/assets/store-logo/store-graphics.svg" alt="" className='w-[200px] md:w-[350px] lg:w-[450px]'/>
                 </div>
             </div>
             <div>

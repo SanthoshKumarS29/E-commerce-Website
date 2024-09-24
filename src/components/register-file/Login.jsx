@@ -45,7 +45,7 @@ const Login = () => {
     <div className='max-w-7xl mx-auto p-4 lg:p-0'>
       <div className='flex justify-center items-center p-5 md:p-10 gap-52'>
         <div className='hidden lg:block'>
-          <img src="/reg-page/signin-g.svg" alt="Imgs" />
+          <img src="src/assets//reg-page/signin-g.svg" alt="Imgs" />
         </div>
         <div>
           <div className='pb-10'>
@@ -68,7 +68,7 @@ const Login = () => {
             </div>
           </form>
           <div className='text-sm mt-4 space-y-1'>
-            <p>Don't have an account? <Link to='/register' className='cursor-pointer text-[#0aad0a]'>Sign Up</Link></p>
+            <p>Don't have an account? <Link to='/E-commerce-Website/register' className='cursor-pointer text-[#0aad0a]'>Sign Up</Link></p>
           </div>
         </div>
     </div>

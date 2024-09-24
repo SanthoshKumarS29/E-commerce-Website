@@ -21,23 +21,23 @@ function App() {
   const location = useLocation()
 
   //Hide Navbar & Footer on Dashboard Component
-  const hideNavbarAndFooter = location.pathname === '/dashboard'
+  const hideNavbarAndFooter = location.pathname === '/E-commerce-Website/dashboard'
 
   return (
     <CartProvider>
     {!hideNavbarAndFooter && <NavBar2/>}
 
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/shop' element={<Shop />} />
-      <Route path='/store' element={<Store />} />
-      <Route path='/register' element={<Register />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/blog' element={<Blog/>} />
-      <Route path='/about' element={<About />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/dashboard' element={<WholeDashboard />} />
-      <Route path='/wishlist' element={<WhishList />} />
+      <Route path='/E-commerce-Website/' element={<Home />} />
+      <Route path='/E-commerce-Website/shop' element={<Shop />} />
+      <Route path='/E-commerce-Website/store' element={<Store />} />
+      <Route path='/E-commerce-Website/register' element={<Register />} />
+      <Route path='/E-commerce-Website/login' element={<Login />} />
+      <Route path='/E-commerce-Website/blog' element={<Blog/>} />
+      <Route path='/E-commerce-Website/about' element={<About />} />
+      <Route path='/E-commerce-Website/contact' element={<Contact />} />
+      <Route path='/E-commerce-Website/dashboard' element={<WholeDashboard />} />
+      <Route path='/E-commerce-Website/wishlist' element={<WhishList />} />
     </Routes>
 
     {!hideNavbarAndFooter && <Footer/>}

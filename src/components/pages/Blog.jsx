@@ -22,7 +22,7 @@ const Blog = () => {
             <div>
                 <div className='flex flex-col lg:flex-row items-center gap-10'>
                     <div className='overflow-hidden'>
-                        <img src="/blog/blog-large.jpg" alt="Nothing" className='transition duration-300 ease-in-out rounded-lg hover:scale-110 '/>
+                        <img src="src/assets//blog/blog-large.jpg" alt="Nothing" className='transition duration-300 ease-in-out rounded-lg hover:scale-110 '/>
                     </div>
                     <div className='w-full lg:w-[600px] space-y-5'>
                         <h1 className='text-3xl font-bold hover:text-[#0aad0a]'>Garlic Cream Bucatini with Peas and Asparagus</h1>

@@ -63,12 +63,12 @@ function NavBar() {
                         <button className='flex items-center px-6 py-2 border-2 rounded-lg font-medium text-gray-400 hover:bg-gray-200 duration-300'><IoLocationOutline />Location</button>
                     </div>
                     <div className="flex justify-end gap-3 text-base relative">
-                        <Link to='/wishlist' className="relative flex items-center">
+                        <Link to='/E-commerce-Website/wishlist' className="relative flex items-center">
                             <FaRegHeart />
                             <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">5</span>
                         </Link>
                         <div>
-                            <Link to='/register'><FaRegUser /></Link>
+                            <Link to='/E-commerce-Website/register'><FaRegUser /></Link>
                         </div>
                         <div className="relative flex items-center cursor-pointer" onClick={buyItems}>
                             <FiShoppingBag />
@@ -100,13 +100,13 @@ function NavBar() {
                             </div>
                     </div>
                     <div className=' flex items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
-                        <Link to='/'>Home</Link>
+                        <Link to='/E-commerce-Website/'>Home</Link>
                     </div>
                     <div className=' flex items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
-                        <Link to='/shop'>Shop</Link>
+                        <Link to='/E-commerce-Website/shop'>Shop</Link>
                     </div>
                     <div className=' flex items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
-                        <Link to='/store'>Store</Link>
+                        <Link to='/E-commerce-Website/store'>Store</Link>
                     </div>
                     <div className=' flex items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
                         <p>Mega Menu</p>
@@ -150,7 +150,7 @@ function NavBar() {
                                     </div>
                                 </div>
                                 <div className=''>
-                                    <img src="/images/menu-banner.jpg" alt="Nothing" />
+                                    <img src="src/assets/images/menu-banner.jpg" alt="Nothing" />
                                     <div className='absolute top-2 w-40 p-6'>
                                         <p className='font-bold text-base'>Dont miss this Offer Today</p>
                                         <button className='border-2 p-2 mt-3 text-sm font-bold text-white rounded-lg bg-[#0aad0a]'>Shop Now</button>
@@ -163,13 +163,13 @@ function NavBar() {
                         <p>Page</p>
                         <FaAngleDown />
                         <div className='absolute left-0 top-5 mt-2 hidden group-hover:flex bg-white p-2 flex-col gap-3 text-black shadow-lg rounded-lg w-60 z-50'>
-                            <Link to='/blog' className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Blog</Link>
-                            <Link to='/about' className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>About Us</Link>
-                            <Link to='/contact' className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Contact</Link>
+                            <Link to='/E-commerce-Website/blog' className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Blog</Link>
+                            <Link to='/E-commerce-Website/about' className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>About Us</Link>
+                            <Link to='/E-commerce-Website/contact' className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Contact</Link>
                         </div>
                     </div>
                     <div className='flex items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
-                        <Link to = '/dashboard'>Dashboard</Link>
+                        <Link to = '/E-commerce-Website/dashboard'>Dashboard</Link>
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@ function NavBar() {
                             <h2 className='text-2xl font-bold'>FreshCart</h2>
                         </div>
                         <div className="flex justify-end gap-3 text-base relative">
-                            <Link to='/wishlist' className="relative flex items-center">
+                            <Link to='/E-commerce-Website/wishlist' className="relative flex items-center">
                                 <FaRegHeart />
                                 <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">5</span>
                             </Link>
@@ -243,18 +243,18 @@ function NavBar() {
                                 </div>
                                 <div className='w-full flex flex-col items-center justify-between gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
                                     <div className='w-full flex items-center justify-between p-2 border-b-2' >
-                                        <Link to='/' onClick={handleNav}>Home</Link>
+                                        <Link to='/E-commerce-Website/' onClick={handleNav}>Home</Link>
                                     </div>
                                 </div>
                                 <div className='w-full flex flex-col items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
                                     <div className='w-full flex items-center justify-between p-2 border-b-2' >
-                                        <Link to ='/shop' onClick={handleNav}>Shop</Link>
+                                        <Link to ='/E-commerce-Website/shop' onClick={handleNav}>Shop</Link>
                                         
                                     </div>
                                 </div>
                                 <div className='w-full flex flex-col items-center gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
                                     <div className='w-full flex items-center justify-between p-2 border-b-2' >
-                                        <Link to ='/store' onClick={handleNav}>Store</Link>
+                                        <Link to ='/E-commerce-Website/store' onClick={handleNav}>Store</Link>
                                         
                                     </div>
                                 </div>
@@ -303,7 +303,7 @@ function NavBar() {
                                                     </div>
                                                 </div>
                                                 <div className='relative'>
-                                                    <img src="/images/menu-banner.jpg" alt="Nothing" />
+                                                    <img src="src/assets/images/menu-banner.jpg" alt="Nothing" />
                                                     <div className='absolute top-2 w-40 p-6'>
                                                         <p className='font-bold text-base'>Dont miss this Offer Today</p>
                                                         <button className='border-2 p-2 mt-3 text-sm font-bold text-white rounded-lg bg-[#0aad0a]'>Shop Now</button>
@@ -320,14 +320,14 @@ function NavBar() {
                                     </div>
                                     {open === 2 && (
                                         <div className='mt-2 hidden group-hover:flex bg-white p-2 flex-col gap-3 text-black shadow-lg rounded-lg w-full z-50'>
-                                            <Link to='/blog' onClick={handleNav} className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Blog</Link>
-                                            <Link to='/about' onClick={handleNav} className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>About Us</Link>
-                                            <Link to='/contact' onClick={handleNav} className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Contact</Link>
+                                            <Link to='/E-commerce-Website/blog' onClick={handleNav} className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Blog</Link>
+                                            <Link to='/E-commerce-Website/about' onClick={handleNav} className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>About Us</Link>
+                                            <Link to='/E-commerce-Website/contact' onClick={handleNav} className='text-sm font-medium hover:bg-gray-300 p-1 rounded-lg'>Contact</Link>
                                         </div>
                                     )}
                                 </div>
                                 <div className='w-full flex items-start p-2 gap-2 group cursor-pointer hover:text-[#0aad0a] duration-200'>
-                                    <Link to='/dashboard' onClick={handleNav}>Dashboard</Link>
+                                    <Link to='/E-commerce-Website/dashboard' onClick={handleNav}>Dashboard</Link>
                                 </div>
                             </div>
                         </div>

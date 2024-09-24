@@ -67,7 +67,7 @@ const Register = () => {
       <div className='max-w-7xl mx-auto p-4 lg:p-0'>
         <div className='flex justify-center p-5 md:p-10 gap-52'>
           <div className='hidden lg:block'>
-            <img src="/reg-page/signup-g.svg" alt="Imgs" />
+            <img src="src/assets//reg-page/signup-g.svg" alt="Imgs" />
           </div>
           <div>
             <div className='pb-10'>
@@ -100,7 +100,7 @@ const Register = () => {
               </div>
             </form>
             <div className='text-sm mt-4 space-y-1'>
-              <p>Already have an account? <Link to='/login' className='cursor-pointer text-[#0aad0a]'>Sign In</Link></p>
+              <p>Already have an account? <Link to='/E-commerce-Website/login' className='cursor-pointer text-[#0aad0a]'>Sign In</Link></p>
               <p>By Conitnouing.You agree to our <a href='#' className='cursor-pointer text-[#0aad0a]'>Terms of Service</a> of <a href="#" className='cursor-pointer text-[#0aad0a]'>Privacy Policy</a></p>
             </div>
           </div>

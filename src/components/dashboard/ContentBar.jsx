@@ -17,7 +17,7 @@ const ContentBar = () => {
 
       <div className='p-5 mt-3 xl:max-w-7xl xl:mx-auto'>
         <div className='relative -z-40'>
-          <img src="/dashboard/slider-image-1.jpg" alt="nothing" className='h-[240px] w-full object-cover rounded-3xl'/>
+          <img src="src/assets/dashboard/slider-image-1.jpg" alt="nothing" className='h-[240px] w-full object-cover rounded-3xl'/>
           <div className='absolute top-0 px-5 py-10 lg:p-16 space-y-2'>
             <h1 className='text-xl lg:text-5xl font-bold lg:font-normal'>Welcome Back! FreshCart</h1>
             <p>FreshCart is SImple & Clean for Developer and designer</p>

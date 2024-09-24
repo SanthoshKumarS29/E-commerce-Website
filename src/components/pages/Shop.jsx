@@ -228,7 +228,7 @@ const Shop = () => {
 
             <div className='mt-5'>
               <div className='relative w-full'>
-                <img src="/images/assortment-citrus-fruits.png" alt="Nothing" className='object-cover rounded-lg' />
+                <img src="src/assets//images/assortment-citrus-fruits.png" alt="Nothing" className='object-cover rounded-lg' />
                 <div className='absolute top-2 px-5 py-5 space-y-3 w-full'>
                   <h3 className='text-3xl font-medium text-[#001e2b]'>Fresh Fruits</h3>
                   <p className='text-base mb-2'>Get Upto 25% Off</p>
@@ -440,7 +440,7 @@ const Shop = () => {
 
             <div className='mt-5'>
               <div className='relative w-full'>
-                <img src="/images/assortment-citrus-fruits.png" alt="Nothing" className='object-cover rounded-lg' />
+                <img src="src/assets/images/assortment-citrus-fruits.png" alt="Nothing" className='object-cover rounded-lg' />
                 <div className='absolute top-2 px-5 py-5 space-y-3 w-full'>
                   <h3 className='text-3xl font-medium text-[#001e2b]'>Fresh Fruits</h3>
                   <p className='text-base mb-2'>Get Upto 25% Off</p>

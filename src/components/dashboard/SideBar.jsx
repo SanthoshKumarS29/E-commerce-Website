@@ -17,7 +17,7 @@ const SideBar = () => {
       <div className='p-4'>
 
         <div className=''>
-          <Link to='/' className='flex bg-white p-2'>
+          <Link to='/E-commerce-Website/' className='flex bg-white p-2'>
             <IoCartOutline size={35} className='text-[#0aad0a]' />
             <button className='text-2xl font-bold'>FreshCart</button>
           </Link>

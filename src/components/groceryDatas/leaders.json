@@ -1,27 +1,27 @@
 {
     "members":[
         {
-            "people":"/about/team-1.png",
+            "people":"src/assets/about/team-1.png",
             "name":"Cheif Rogers",
             "des":"Vice President , Reatil"
         },
         {
-            "people":"/about/team-2.png",
+            "people":"src/assets/about/team-2.png",
             "name":"Donna J.Shelton",
             "des":"Cheif Financial Officer"
         },
         {
-            "people":"/about/team-3.png",
+            "people":"src/assets/about/team-3.png",
             "name":"Danieal Leedom",
             "des":"Cheif Communicate Officer"
         },
         {
-            "people":"/about/team-4.png",
+            "people":"src/assets/about/team-4.png",
             "name":"Martha White",
             "des":"Cheif Technology Officer"
         },
         {
-            "people":"/about/team-5.png",
+            "people":"src/assets/about/team-5.png",
             "name":"Victor Pugliese",
             "des":"Cheif Human Resource Officer"
         }

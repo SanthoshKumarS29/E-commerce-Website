@@ -29,7 +29,7 @@ const TopNabar = () => {
           </div>
         </div>
         <div className='flex items-center lg:gap-8 gap-3'>
-          <div className="relative flex items-center border-2 bg-gray-300 rounded-full px-2 py-2 hover:bg-white">
+          <div className="relative cursor-pointer flex items-center border-2 bg-gray-300 rounded-full px-2 py-2 hover:bg-white">
             <CiBellOn size={25} onClick={handleNotify}/>
             <span className="absolute -top-2 -right-3 text-xs bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center">2</span>
             {/* Notification bar */}
@@ -46,7 +46,7 @@ const TopNabar = () => {
               </div>
               <div className='flex gap-4 px-3 py-6 bg-gray-200 cursor-pointer'>
                 <div>
-                  <img src="/dashboard/avatar-1.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
+                  <img src="src/assets/dashboard/avatar-1.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
                 </div>
                 <div className='space-y-1 text-sm'>
                   <p className='font-bold'>Your Order is placed <span className='font-normal'>Waiting for Shipping</span></p>
@@ -55,7 +55,7 @@ const TopNabar = () => {
               </div>
               <div className='flex gap-4 px-3 py-6 hover:bg-gray-200 cursor-pointer'>
                 <div>
-                  <img src="/dashboard/avatar-5.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
+                  <img src="src/assets/dashboard/avatar-5.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
                 </div>
                 <div className='space-y-1 text-sm'>
                   <p className='font-bold'>Santhosh SK <span className='font-normal'>answered to your ordered pending list</span></p>
@@ -64,7 +64,7 @@ const TopNabar = () => {
               </div>
               <div className='flex gap-4 px-3 py-6 hover:bg-gray-200 cursor-pointer'>
                 <div>
-                  <img src="/dashboard/avatar-2.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
+                  <img src="src/assets/dashboard/avatar-2.jpg" alt="" className='h-12 w-12 rounded-full object-cover'/>
                 </div>
                 <div className='space-y-1 text-sm'>
                   <p className='font-bold'>You have new Messages <span className='font-normal'>2 unread message</span></p>
@@ -77,7 +77,7 @@ const TopNabar = () => {
             )}
           </div>
           <div>
-            <img src="/dashboard/avatar-5.jpg" alt="" className='lg:h-12 h-10 lg:w-12 w-10 rounded-full object-cover'/>
+            <img src="src/assets/dashboard/avatar-5.jpg" alt="" className='lg:h-12 h-10 lg:w-12 w-10 rounded-full object-cover'/>
           </div>
           <div className='block lg:hidden' onClick={handleNav}>
               {!nav ? <RxHamburgerMenu size={20}/>: <RxCross1 size={20}/>}
