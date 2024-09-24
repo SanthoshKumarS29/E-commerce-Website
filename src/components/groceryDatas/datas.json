@@ -1,7 +1,7 @@
 {
     "banner":[
         {
-          "img": "src/assets/images/slide-1.jpg",
+          "img": "https://freshcart.codescandy.com/assets/images/slider/slide-1.jpg",
           "title": "Super Market for Fresh Grocery",
           "description": "Introduced a new model for online Grocery shopping and convenient home delivery",
           "label": "Opening sales discount 50%",
@@ -9,7 +9,7 @@
           "buttonLink": "#"
         },
         {
-          "img": "src/assets/images/slider-2.jpg",
+          "img": "https://freshcart.codescandy.com/assets/images/slider/slider-2.jpg",
           "title": "Free shipping on orders over $100",
           "description": "Free Shipping to First-Time customers Only, After promotions and discounts are applied",
           "label": "Free shipping - orders over $100",
@@ -19,43 +19,43 @@
       ],
     "featured":[
       {
-        "Prdt-img":"src/assets/images/category-atta-rice-dal.jpg",
+        "Prdt-img":"/images/category-atta-rice-dal.jpg",
         "prd-name":"Atta,Rice & Dal"
       },
       {
-        "Prdt-img":"src/assets/images/category-baby-care.jpg",
+        "Prdt-img":"/images/category-baby-care.jpg",
         "prd-name":"Baby Care"
       },
       {
-        "Prdt-img":"src/assets/images/category-bakery-biscuits.jpg",
+        "Prdt-img":"/images/category-bakery-biscuits.jpg",
         "prd-name":"Bakery & Biscuits"
       },
       {
-        "Prdt-img":"src/assets/images/category-chicken-meat-fish.jpg",
+        "Prdt-img":"/images/category-chicken-meat-fish.jpg",
         "prd-name":"Chicken,Meat & Fish"
       },
       {
-        "Prdt-img":"src/assets/images/category-cleaning-essentials.jpg",
+        "Prdt-img":"/images/category-cleaning-essentials.jpg",
         "prd-name":"Cleaning Essentials"
       },
       {
-        "Prdt-img":"src/assets/images/category-dairy-bread-eggs.jpg",
+        "Prdt-img":"/images/category-dairy-bread-eggs.jpg",
         "prd-name":"Dairy Bread & eggs"
       },
       {
-        "Prdt-img":"src/assets/images/category-instant-food.jpg",
+        "Prdt-img":"/images/category-instant-food.jpg",
         "prd-name":"InstantFood"
       },
       {
-        "Prdt-img":"src/assets/images/category-pet-care.jpg",
+        "Prdt-img":"/images/category-pet-care.jpg",
         "prd-name":"Pet Care"
       },
       {
-        "Prdt-img":"src/assets/images/category-snack-munchies.jpg",
+        "Prdt-img":"/images/category-snack-munchies.jpg",
         "prd-name":"Snack Munchies"
       },
       {
-        "Prdt-img":"src/assets/images/category-tea-coffee-drinks.jpg",
+        "Prdt-img":"/images/category-tea-coffee-drinks.jpg",
         "prd-name":"Tea Coffee & Drinks"
       }
     ],
@@ -63,7 +63,7 @@
       {
         "id":1,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-1.jpg",
+        "pop-img":"/images/product-img-1.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -73,7 +73,7 @@
       {
         "id":2,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-2.jpg",
+        "pop-img":"/images/product-img-2.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -83,7 +83,7 @@
       {
         "id":3,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-3.jpg",
+        "pop-img":"/images/product-img-3.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -93,7 +93,7 @@
       {
         "id":4,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-4.jpg",
+        "pop-img":"/images/product-img-4.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -103,7 +103,7 @@
       {
         "id":5,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-5.jpg",
+        "pop-img":"/images/product-img-5.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -113,7 +113,7 @@
       {
         "id":6,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-6.jpg",
+        "pop-img":"/images/product-img-6.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -123,7 +123,7 @@
       {
         "id":7,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-7.jpg",
+        "pop-img":"/images/product-img-7.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -133,7 +133,7 @@
       {
         "id":8,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-8.jpg",
+        "pop-img":"/images/product-img-8.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -143,7 +143,7 @@
       {
         "id":9,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-9.jpg",
+        "pop-img":"/images/product-img-9.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -153,7 +153,7 @@
       {
         "id":10,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-10.jpg",
+        "pop-img":"/images/product-img-10.jpg",
         "pop-title":"Snack & Munchies",
         "pop-name":"Haldiram's Sev Bhujia",
         "pop-value1":"$26",
@@ -163,7 +163,7 @@
       {
         "id":11,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-11.jpg",
+        "pop-img":"/images/product-img-11.jpg",
         "pop-title":"Tea ,Coffee 7 Drinks",
         "pop-name":"Roast Ground Coffee",
         "pop-value1":"$26",
@@ -173,7 +173,7 @@
       {
         "id":12,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-12.jpg",
+        "pop-img":"/images/product-img-12.jpg",
         "pop-title":"Fruits & Vegetables",
         "pop-name":"Cursehed Tomatos",
         "pop-value1":"$26",
@@ -183,7 +183,7 @@
       {
         "id":13,
         "new":"sale",
-        "pop-img":"src/assets/images/product-img-13.jpg",
+        "pop-img":"/images/product-img-13.jpg",
         "pop-title":"Fruits & Vegetables",
         "pop-name":"'Golden PineApple",
         "pop-value1":"$26",
