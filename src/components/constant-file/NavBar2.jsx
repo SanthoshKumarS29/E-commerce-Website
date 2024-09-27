@@ -15,6 +15,7 @@ function NavBar() {
     const [open, setClose] = useState(null)
     const [nav,setNav]=useState(false)
     const [cartOpen,setCartClose] = useState(false)
+    
 
     const handleNav =()=>{
         setNav(!nav)

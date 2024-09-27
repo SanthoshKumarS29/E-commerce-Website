@@ -14,11 +14,6 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [prdtSlide, setPrdtSlide] = useState(0);
-  const [heart, setHeart] = useState(false);
-
-  const handleHeartClick = () => {
-    setHeart(!heart)
-  }
 
   const truncateText = (text, maxLength) => {
     return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
