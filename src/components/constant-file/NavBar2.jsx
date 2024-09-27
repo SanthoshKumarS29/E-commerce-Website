@@ -183,13 +183,17 @@ function NavBar() {
                             <IoCartOutline size={40} className='text-[#0aad0a]' />
                             <h2 className='text-2xl font-bold'>FreshCart</h2>
                         </Link>
-                        <div className="flex justify-end gap-3 text-base relative">
-                            <div className='border-2'>
+                        <div className="flex justify-end items-center gap-3 text-base relative">
+                            <div className='border-2 p-2 border-[#0aad0a] rounded-full cursor-pointer hover:bg-[#0aad0a] hover:text-white duration-200'>
                                 <Link to='/E-commerce-Website/register'><FaRegUser /></Link>
                             </div>
-                            <Link to='/E-commerce-Website/shopcart' className="relative flex items-center" onClick={buyItems}>
+                            <Link to='/E-commerce-Website/shopcart' className="relative flex items-center cursor-pointer border-2 p-2 border-[#0aad0a] rounded-full hover:bg-[#0aad0a] hover:text-white duration-200" onClick={buyItems}>
                                 <FiShoppingBag />
-                                <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">{cart.length}</span>
+                                {cart.length > 0 ? (
+                                <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-5 h-5 flex items-center justify-center">{cart.length}</span>
+                                ):(
+                                <span></span>
+                                )}
                             </Link>
                             <div className='block lg:hidden' onClick={handleNav}>
                             {!nav ? <RxHamburgerMenu size={20}/>: <RxCross1 size={20}/>}
