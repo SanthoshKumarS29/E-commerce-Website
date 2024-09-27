@@ -1,12 +1,14 @@
-import React ,{useState}from 'react'
-import {FaAngleRight,FaArrowRight,FaCaretRight,FaCaretLeft } from 'react-icons/fa'
+import React ,{useState,useContext}from 'react'
+import {FaAngleRight,FaArrowRight,FaCaretRight,FaCaretLeft,FaRegHeart } from 'react-icons/fa'
 import { IoStar } from "react-icons/io5";
 import { IoMdStarOutline } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import slidesData from '../groceryDatas/datas.json';
 import sideImg from '/images/assortment-citrus-fruits.png'
+import { CartContext } from '../hooks/Context';
 
 const Shop = () => {
+  const {cart,addToCart } = useContext(CartContext)
   const [open, setClose] = useState(null)
 
   const prdtDropDowns = (index) => {
@@ -19,6 +21,9 @@ const Shop = () => {
      setContent(!content)
   }
 
+  const truncateText = (text, maxLength) => {
+    return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+  };
 
   return (
     <div>
@@ -485,18 +490,26 @@ const Shop = () => {
             </div>
 
             {/* Food Products */}
-            <div className='py-4 lg:p-0'>
+            <div className='max-w-7xl mx-auto my-8 xl:p-0'>
               <h1 className='text-3xl font-bold mb-5'>Popular Products</h1>
-              <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4'>
-                {slidesData['pop-prdts'].slice(0,10).map((poprds) => (
-                  <div key={poprds.id} className='border-2 p-2 md:p-4 hover:border-[#0aad0a] hover:shadow-lg duration-200'>
-                    <img src={poprds['pop-img']} alt={poprds['pop-name']} className='object-cover mb-2' />
-                    <p className='text-sm text-gray-500 hover:text-[#0aad0a]'>{poprds['pop-title']}</p>
-                    <h3 className='font-semibold text-sm md:text-xl'>{poprds['pop-name']}</h3>
-                    <div className='flex justify-between items-center'>
-                      <p className='text-lg font-bold'>{poprds['pop-value2']} <span className='line-through text-gray-500'>{poprds['pop-value1']}</span></p>
-                      <button className='bg-[#0aad0a] text-white px-3 py-1 rounded-md mt-2' onClick={() => addToCart({id: poprds.id,name: poprds['pop-name'],img: poprds['pop-img']})}
-                      >{poprds['pop-button']}</button>
+              <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+              {slidesData['pop-prdts'].slice(0,10).map((poprds) => (
+                  <div key={poprds.id} className='flex flex-col space-y-2 border-2 p-2 md:p-4 hover:border-[#0aad0a] hover:shadow-lg duration-200'>
+                    <FaRegHeart />
+                    <div className='flex flex-col items-center'>
+                      <img src={poprds['popimg']} alt={poprds['popname']} className='object-cover mb-2' />
+                      <p className='text-sm text-gray-500'>{poprds['poptitle']}</p>
+                      <h3 className='font-semibold text-[13px] md:text-base'>{truncateText(poprds['popname'],20)}</h3>
+                    </div>
+                    <div className='flex flex-col lg:flex-row justify-between lg:items-center'>
+                      <p className='text-lg font-bold'>${poprds['popvalue2']} <span className='line-through text-gray-500'>${poprds['popvalue1']}</span></p>
+                      {cart.some(item => item.id === poprds.id)?(
+                        <button className='border-2 border-[#0aad0a] text-[#0aad0a] px-3 py-1 rounded-md mt-2'
+                        >{poprds['popbutton2']}</button>
+                      ):(
+                        <button className='bg-[#0aad0a] text-white px-3 py-1 rounded-md mt-2' onClick={()=> addToCart(poprds)}
+                        >{poprds['popbutton1']}</button>
+                      )}
                     </div>
                   </div>
                 ))}

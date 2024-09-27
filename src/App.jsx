@@ -12,8 +12,8 @@ import About from './components/pages/About'
 import Contact from './components/pages/Contact'
 import WholeDashboard from './components/dashboard/WholeDashboard'
 import NavBar2 from './components/constant-file/NavBar2'
-import WhishList from './components/pages/WhishList'
 import { CartProvider } from './components/hooks/Context'
+import ShopCart from './components/pages/ShopCart'
 
 
 
@@ -37,7 +37,7 @@ function App() {
       <Route path='/E-commerce-Website/about' element={<About />} />
       <Route path='/E-commerce-Website/contact' element={<Contact />} />
       <Route path='/E-commerce-Website/dashboard' element={<WholeDashboard />} />
-      <Route path='/E-commerce-Website/wishlist' element={<WhishList />} />
+      <Route path='/E-commerce-Website/shopcart' element={<ShopCart />}/>
     </Routes>
 
     {!hideNavbarAndFooter && <Footer/>}

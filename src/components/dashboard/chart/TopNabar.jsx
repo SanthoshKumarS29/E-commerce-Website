@@ -22,7 +22,7 @@ const TopNabar = () => {
   return (
     <div>
         {/* navBar */}
-      <div className={`fixed bg-white z-50 top-0 left-0 w-[85%] h-full overflow-x-scroll transition-transform duration-300 ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`fixed bg-white z-50 top-0 left-0 w-[85%] h-Screen overflow-x-scroll transition-transform duration-300 ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
           <SideBar />
       </div>
       <div className='border-b-2 flex justify-between items-center gap-3 lg:gap-5 px-4 py-2 backdrop-blur-xl'>

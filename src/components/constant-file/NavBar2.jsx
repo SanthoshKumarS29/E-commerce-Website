@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaAngleDown, FaRegHeart, FaRegUser } from 'react-icons/fa';
 import { IoCartOutline, IoLocationOutline } from "react-icons/io5";
 import { RxHamburgerMenu,RxCross1 } from "react-icons/rx";
@@ -7,8 +7,10 @@ import { FiShoppingBag } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import ShopCart from '../pages/ShopCart';
 import menuImg from '/images/menu-banner.jpg'
+import { CartContext } from '../hooks/Context';
 
 function NavBar() {
+    const {cart} = useContext(CartContext)
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [open, setClose] = useState(null)
     const [nav,setNav]=useState(false)
@@ -55,30 +57,26 @@ function NavBar() {
             </div>
             <div className='max-w-7xl mx-auto bg-white hidden lg:block'>
                 <div className='grid grid-cols-2 md:grid-cols-4 justify-between items-center p-4'>
-                    <div className='flex items-center'>
+                    <Link to='/E-commerce-Website/' className='flex items-center'>
                         <IoCartOutline size={40} className='text-[#0aad0a]' />
                         <h2 className='text-2xl font-bold'>FreshCart</h2>
-                    </div>
+                    </Link>
                     <div className='md:flex items-center gap-3 col-span-2 hidden'>
                         <input type="text" placeholder='Search for Products' className='w-[400px] border-2 p-2 rounded-lg focus:outline-none focus-visible:ring-green-400' />
                         <button className='flex items-center px-6 py-2 border-2 rounded-lg font-medium text-gray-400 hover:bg-gray-200 duration-300'><IoLocationOutline />Location</button>
                     </div>
                     <div className="flex justify-end gap-3 text-base relative">
-                        <Link to='/E-commerce-Website/wishlist' className="relative flex items-center">
-                            <FaRegHeart />
-                            <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">5</span>
-                        </Link>
-                        <div>
+                        <div className='border-2 p-2 border-[#0aad0a] rounded-full cursor-pointer hover:bg-[#0aad0a] hover:text-white duration-200'>
                             <Link to='/E-commerce-Website/register'><FaRegUser /></Link>
                         </div>
-                        <div className="relative flex items-center cursor-pointer" onClick={buyItems}>
+                        <Link to='/E-commerce-Website/shopcart' className="relative flex items-center cursor-pointer border-2 p-2 border-[#0aad0a] rounded-full hover:bg-[#0aad0a] hover:text-white duration-200" onClick={buyItems}>
                             <FiShoppingBag />
-                            <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">6</span>
-                            {/* shopping cart */}
-                            <div className={`fixed bg-white z-50 top-0 right-0 w-full lg:w-[50%] h-full overflow-x-scroll transition-transform duration-300 ${cartOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                                <ShopCart />
-                            </div>
-                        </div>
+                            {cart.length > 0 ? (
+                                <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-5 h-5 flex items-center justify-center">{cart.length}</span>
+                            ):(
+                                <span></span>
+                            )}
+                        </Link>
                         <div className='block lg:hidden' onClick={handleNav}>
                         {!nav ? <RxHamburgerMenu size={20}/>: <RxCross1 size={20}/>}
                         </div>
@@ -180,24 +178,18 @@ function NavBar() {
             <div>
                 <div className='block lg:hidden'>
                     <div className='grid grid-cols-2 lg:grid-cols-4 justify-between items-center p-4'>
-                        <div className='flex items-center'>
+                        <Link to='/E-commerce-Website/' className='flex items-center'>
                             <IoCartOutline size={40} className='text-[#0aad0a]' />
                             <h2 className='text-2xl font-bold'>FreshCart</h2>
-                        </div>
+                        </Link>
                         <div className="flex justify-end gap-3 text-base relative">
-                            <Link to='/E-commerce-Website/wishlist' className="relative flex items-center">
-                                <FaRegHeart />
-                                <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">5</span>
-                            </Link>
-                            <FaRegUser />
-                            <div className="relative flex items-center" onClick={buyItems}>
-                                <FiShoppingBag />
-                                <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">6</span>
-                                {/* shopping cart */}
-                                <div className={`fixed bg-white z-50 top-0 right-0 w-full lg:w-[50%] h-full overflow-x-scroll transition-transform duration-300 ${cartOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                                    <ShopCart />
-                                </div>
+                            <div className='border-2'>
+                                <Link to='/E-commerce-Website/register'><FaRegUser /></Link>
                             </div>
+                            <Link to='/E-commerce-Website/shopcart' className="relative flex items-center" onClick={buyItems}>
+                                <FiShoppingBag />
+                                <span className="absolute -top-2 -right-2 text-xs bg-[#0aad0a] text-white rounded-full w-4 h-4 flex items-center justify-center">{cart.length}</span>
+                            </Link>
                             <div className='block lg:hidden' onClick={handleNav}>
                             {!nav ? <RxHamburgerMenu size={20}/>: <RxCross1 size={20}/>}
                             </div>

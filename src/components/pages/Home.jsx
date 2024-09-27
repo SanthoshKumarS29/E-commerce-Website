@@ -1,21 +1,28 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaArrowRight, FaArrowLeft,FaRegHeart } from 'react-icons/fa';
 import slidesData from '../groceryDatas/datas.json';
 import { CiClock2,CiGift } from "react-icons/ci";
 import { BsBoxSeam } from "react-icons/bs";
 import { IoReloadOutline } from "react-icons/io5";
-import { CartContext } from '../hooks/Context';
 import banner1 from '/images/grocery-banner.png'
 import banner2 from '/images/grocery-banner-2.jpg'
 import banner3 from '/images/banner-deal.jpg'
 import banner4 from '/images/assortment-citrus-fruits.png'
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-  const { addToCart } = useContext(CartContext)
   const [currentSlide, setCurrentSlide] = useState(0);
   const [prdtSlide, setPrdtSlide] = useState(0);
-  // const [cart, setCart] = useState([]);
+  const [heart, setHeart] = useState(false);
+
+  const handleHeartClick = () => {
+    setHeart(!heart)
+  }
+
+  const truncateText = (text, maxLength) => {
+    return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,7 +61,7 @@ const Home = () => {
           {slidesData.banner.map((slide, index) => (
             <div key={index} className='w-full flex-shrink-0 relative p-4 xl:p-0'>
               <img src={slide.img} alt={slide.title} className='object-cover h-[500px] w-full' />
-              <div className='absolute top-32 left-5 p-4 md:p-7 lg:p-10 text-white w-[200px] md:w-[350px] lg:w-[600px]'>
+              <div className='absolute top-32 lg:top-24 left-5 p-4 md:p-7 lg:p-5 xl:p-0 text-white w-[200px] md:w-[350px] lg:w-[600px]'>
                 <p className='bg-yellow-500 font-bold p-1 rounded-lg text-xs lg:text-sm w-[200px] text-center mb-2'>{slide.label}</p>
                 <h1 className='text-2xl md:text-4xl lg:text-6xl font-bold mb-3 text-[#001e2b] lg:mb-5'>{slide.title}</h1>
                 <h5 className=' text-xs lg:text-base font-bold text-gray-400 mb-4 lg:mb-6'>{slide.description}</h5>
@@ -67,11 +74,9 @@ const Home = () => {
         </div>
 
         {/* Navigation Dots */}
-        <div className='absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-3'>
+        <div className='absolute bottom-10 md:bottom-10 lg:bottom-8 xl:bottom-5 left-1/2 transform -translate-x-1/2 flex  space-x-3'>
           {slidesData.banner.map((_, index) => (
-            <span
-              key={index}
-              className={`p-1 rounded-full bg-black cursor-pointer transition-all ${
+            <span key={index} className={`p-1 rounded-full bg-black cursor-pointer transition-all ${
                 index === currentSlide ? 'bg-opacity-100' : 'bg-opacity-50'
               }`}
               onClick={() => goToSlide(index)}
@@ -116,9 +121,9 @@ const Home = () => {
             <div className='absolute top-5 md:top-2 left-0 p-5 md:p-10 text-[#001e2b]'>
               <h1 className='text-2xl md:text-2xl lg:text-4xl font-bold mb-2'>Fruits & Vegetables</h1>
               <p className='md:text-lg mb-4'>Get Up to 30% Off</p>
-              <button className='bg-[#001e2b] text-white px-4 py-2 rounded-md hover:bg-green-600'>
+              <Link to='/E-commerce-Website/shop' className='bg-[#001e2b] text-white px-4 py-2 rounded-md hover:bg-green-600'>
                 Shop Now
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -128,9 +133,9 @@ const Home = () => {
             <div className='absolute top-5 md:top-2 left-0 p-5 md:p-10 text-[#001e2b]'>
               <h1 className='text-2xl md:text-2xl lg:text-4xl  font-bold mb-2'>Freshly Baked Buns</h1>
               <p className='md:text-lg mb-4'>Get Up to 25% Off</p>
-              <button className='bg-[#001e2b] text-white px-4 py-2 rounded-md hover:bg-green-600'>
+              <Link to='/E-commerce-Website/shop' className='bg-[#001e2b] text-white px-4 py-2 rounded-md hover:bg-green-600'>
                 Shop Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -141,15 +146,16 @@ const Home = () => {
         <h1 className='text-3xl font-bold mb-5'>Popular Products</h1>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'>
           {slidesData['pop-prdts'].slice(0,10).map((poprds) => (
-            <div key={poprds.id} className='space-y-2 border-2 p-2 md:p-4 hover:border-[#0aad0a] hover:shadow-lg duration-200'>
-              <FaRegHeart />
-              <img src={poprds['pop-img']} alt={poprds['pop-name']} className='object-cover mb-2' />
-              <p className='text-sm text-gray-500'>{poprds['pop-title']}</p>
-              <h3 className='font-semibold text-[13px] md:text-base'>{poprds['pop-name']}</h3>
-              <div className='flex justify-between items-center'>
-                <p className='text-lg font-bold'>{poprds['pop-value2']} <span className='line-through text-gray-500'>{poprds['pop-value1']}</span></p>
-                <button className='bg-[#0aad0a] text-white px-3 py-1 rounded-md mt-2' onClick={()=> addToCart(poprds)}
-                >{poprds['pop-button']}</button>
+            <div key={poprds.id} className='flex flex-col space-y-2 border-2 p-2 md:p-6 hover:border-[#0aad0a] hover:shadow-lg duration-200'>
+              <div className='flex flex-col items-center'>
+                <img src={poprds['popimg']} alt={poprds['popname']} className='object-cover mb-2' />
+                <p className='text-sm text-gray-500'>{poprds['poptitle']}</p>
+                <h3 className='font-semibold text-[13px] md:text-base'>{truncateText(poprds['popname'],20)}</h3>
+              </div>
+              <div className='flex flex-col lg:flex-row justify-between lg:items-center'>
+                <p className='text-lg font-bold'>${poprds['popvalue2']} <span className='line-through text-gray-500'>${poprds['popvalue1']}</span></p>
+                  <button className='border-2 border-[#0aad0a] text-[#0aad0a] px-3 py-1 rounded-md mt-2'
+                  ><Link to='/E-commerce-Website/shop'>{poprds['popbutton3']}</Link></button>
               </div>
             </div>
           ))}
